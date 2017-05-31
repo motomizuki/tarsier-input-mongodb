@@ -2,7 +2,7 @@ import datetime
 
 import pymongo
 
-from input_base import TarsierInputPlugin
+from .input_base import TarsierInputPlugin
 
 
 
