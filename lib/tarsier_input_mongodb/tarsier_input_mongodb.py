@@ -1,12 +1,10 @@
 import datetime
 
 import pymongo
-
-from .input_base import TarsierInputPlugin
-
+import tarsier
 
 
-class TarsierInputMongodb(TarsierInputPlugin):
+class TarsierInputMongodb(tarsier.TarsierInputPlugin):
     def parse_config(self, config: dict) -> dict:
         if "time_condition" in config:
             condition = config["time_condition"]
